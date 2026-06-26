@@ -1,13 +1,13 @@
 const bookingUrl = "https://booksy.com/pl-pl/330339_ae-nails-lashes-siedlce_paznokcie_4669_siedlce";
 
 const portfolioItems = [
-  { src: "./assets/nails-review-04.jpeg", type: "Paznokcie", title: "Różowy french" },
-  { src: "./assets/nails-review-03.jpeg", type: "Paznokcie", title: "Brokatowy french" },
-  { src: "./assets/nails-review-01.jpeg", type: "Paznokcie", title: "Klasyczny french" },
-  { src: "./assets/lashes-4d.jpeg", type: "Rzęsy", title: "Uzupełnienie rzęs 4D-5D" },
-  { src: "./assets/beauty-candidate-03.jpeg", type: "Rzęsy", title: "Podkreślone spojrzenie" },
-  { src: "./assets/tattoo-04.jpeg", type: "Tattoo", title: "Minimalistyczny detal" },
-  { src: "./assets/tattoo-08.jpeg", type: "Tattoo", title: "Delikatna kompozycja" }
+  { src: "./assets/nails-review-04.jpeg", type: "Paznokcie" },
+  { src: "./assets/nails-review-09.jpeg", type: "Paznokcie" },
+  { src: "./assets/nails-review-01.jpeg", type: "Paznokcie" },
+  { src: "./assets/lashes-4d.jpeg", type: "Rzęsy" },
+  { src: "./assets/beauty-candidate-03.jpeg", type: "Rzęsy" },
+  { src: "./assets/tattoo-04.jpeg", type: "Tattoo" },
+  { src: "./assets/tattoo-08.jpeg", type: "Tattoo" }
 ];
 
 const serviceCategories = [
@@ -117,9 +117,9 @@ function renderPortfolio() {
   portfolioGrid.innerHTML = portfolioItems
     .map(
       (item) => `
-        <button class="gallery-card" type="button" data-src="${item.src}" data-title="${item.title}" data-type="${item.type}">
-          <img src="${item.src}" alt="${item.title}" loading="lazy" />
-          <div><span>${item.type}</span><strong>${item.title}</strong></div>
+        <button class="gallery-card" type="button" data-src="${item.src}" data-type="${item.type}">
+          <img src="${item.src}" alt="${item.type} AE Nails & Lashes" loading="lazy" />
+          <div><span>${item.type}</span></div>
         </button>
       `
     )
@@ -128,8 +128,8 @@ function renderPortfolio() {
   portfolioGrid.querySelectorAll(".gallery-card").forEach((button) => {
     button.addEventListener("click", () => {
       lightboxImage.src = button.dataset.src;
-      lightboxImage.alt = button.dataset.title;
-      lightboxCaption.textContent = `${button.dataset.type} • ${button.dataset.title}`;
+      lightboxImage.alt = `${button.dataset.type} AE Nails & Lashes`;
+      lightboxCaption.textContent = button.dataset.type;
       lightbox.showModal();
     });
   });
