@@ -430,13 +430,18 @@ h2 {
 }
 
 .gallery-card:nth-child(1) {
-  grid-column: span 4;
+  grid-column: span 3;
   min-height: 440px;
 }
 
 .gallery-card:nth-child(2),
 .gallery-card:nth-child(6) {
   grid-column: span 3;
+}
+
+.gallery-card:nth-child(3),
+.gallery-card:nth-child(7) {
+  grid-column: span 2;
 }
 
 .gallery-card img {

@@ -4,10 +4,10 @@ const portfolioItems = [
   { src: "./assets/nails-review-04.jpeg", type: "Paznokcie", title: "Różowy french" },
   { src: "./assets/nails-review-03.jpeg", type: "Paznokcie", title: "Brokatowy french" },
   { src: "./assets/nails-review-01.jpeg", type: "Paznokcie", title: "Klasyczny french" },
-  { src: "./assets/nails-review-05.jpeg", type: "Paznokcie", title: "Naturalne wykończenie" },
-  { src: "./assets/nails-review-08.jpeg", type: "Paznokcie", title: "Kolorowe przedłużenie" },
   { src: "./assets/lashes-4d.jpeg", type: "Rzęsy", title: "Uzupełnienie rzęs 4D-5D" },
-  { src: "./assets/tattoo-04.jpeg", type: "Tattoo", title: "Minimalistyczny detal" }
+  { src: "./assets/beauty-candidate-03.jpeg", type: "Rzęsy", title: "Podkreślone spojrzenie" },
+  { src: "./assets/tattoo-04.jpeg", type: "Tattoo", title: "Minimalistyczny detal" },
+  { src: "./assets/tattoo-08.jpeg", type: "Tattoo", title: "Delikatna kompozycja" }
 ];
 
 const serviceCategories = [
@@ -16,7 +16,7 @@ const serviceCategories = [
     services: [
       { name: "Uzupełnianie paznokci żelem/akrylem", oldPrice: "110 zł", price: "99 zł", duration: "1 godz.", note: "Promocja do 10%" },
       { name: "Pedicure + lakier hybrydowy", oldPrice: "90 zł", price: "81 zł", duration: "1 godz.", note: "Promocja do 10%" },
-      { name: "Manicure hybrydowy + baza wzmacniająca", price: "90 zł", duration: "45 min", note: "Dodatki dostępne w Booksy" }
+      { name: "Manicure hybrydowy + baza wzmacniająca", price: "90 zł", duration: "45 min", note: "Możliwość dobrania dodatków do stylizacji" }
     ]
   },
   {
@@ -36,7 +36,7 @@ const serviceCategories = [
       { name: "Manicure bez malowania", price: "40 zł", duration: "30 min" },
       { name: "Usuwanie hybrydy z paznokci z innego salonu", price: "40 zł", duration: "20 min" },
       { name: "Usuwanie żelu/akrylu z paznokci", price: "40 zł", duration: "20 min" },
-      { name: "Manicure hybrydowy + baza wzmacniająca", price: "90 zł", duration: "45 min", note: "Dodatki dostępne w Booksy" },
+      { name: "Manicure hybrydowy + baza wzmacniająca", price: "90 zł", duration: "45 min", note: "Możliwość dobrania dodatków do stylizacji" },
       { name: "Przedłużanie paznokci żelem/akrylem tipsy", oldPrice: "110 zł", price: "99 zł", duration: "1 godz. 15 min", note: "Promocja do 10%" },
       { name: "Utwardzanie paznokcia żelem/akrylem", oldPrice: "110 zł", price: "99 zł", duration: "1 godz.", note: "Promocja do 10%" },
       { name: "Uzupełnianie paznokci żelem/akrylem", oldPrice: "110 zł", price: "99 zł", duration: "1 godz.", note: "Promocja do 10%" },
@@ -46,8 +46,8 @@ const serviceCategories = [
   {
     name: "Pedicure",
     services: [
-      { name: "Pedicure bez malowania", price: "70 zł", duration: "30 min", note: "Dodatki dostępne w Booksy" },
-      { name: "Pedicure bez wody", price: "70 zł", duration: "45 min", note: "Dodatki dostępne w Booksy" },
+      { name: "Pedicure bez malowania", price: "70 zł", duration: "30 min", note: "Możliwość dobrania dodatków do usługi" },
+      { name: "Pedicure bez wody", price: "70 zł", duration: "45 min", note: "Możliwość dobrania dodatków do usługi" },
       { name: "Pedicure + lakier hybrydowy", oldPrice: "90 zł", price: "81 zł", duration: "1 godz.", note: "Promocja do 10%" },
       { name: "Pedicure + lakier klasyczny", oldPrice: "90 zł", price: "81 zł", duration: "45 min", note: "Promocja do 10%" }
     ]
@@ -179,7 +179,7 @@ function renderPrices() {
                     <article class="service-row">
                       <div>
                         <h4>${service.name}</h4>
-                        <p>${service.note || "Cena i czas według publicznego cennika Booksy."}</p>
+                        <p>${service.note || "Cena i czas usługi według aktualnego cennika."}</p>
                       </div>
                       <a class="service-price" href="${bookingUrl}" target="_blank" rel="noreferrer" aria-label="Umów ${service.name}">
                         ${service.oldPrice ? `<del>${service.oldPrice}</del>` : ""}
