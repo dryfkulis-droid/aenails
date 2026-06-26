@@ -1,20 +1,13 @@
 const bookingUrl = "https://booksy.com/pl-pl/330339_ae-nails-lashes-siedlce_paznokcie_4669_siedlce";
 
 const portfolioItems = [
-  { src: "./assets/hero-nails.jpeg", type: "Paznokcie", title: "Inspiracja AE Nails" },
-  { src: "./assets/nails-gold.jpeg", type: "Paznokcie", title: "Zdobienia i połysk" },
-  { src: "./assets/nails-white.jpeg", type: "Paznokcie", title: "Jasna stylizacja" },
-  { src: "./assets/nails-dark.jpeg", type: "Paznokcie", title: "Ciemny efekt premium" },
-  { src: "./assets/nails-pink.jpeg", type: "Paznokcie", title: "Delikatny manicure" },
+  { src: "./assets/nails-review-04.jpeg", type: "Paznokcie", title: "Różowy french" },
+  { src: "./assets/nails-review-03.jpeg", type: "Paznokcie", title: "Brokatowy french" },
+  { src: "./assets/nails-review-01.jpeg", type: "Paznokcie", title: "Klasyczny french" },
+  { src: "./assets/nails-review-05.jpeg", type: "Paznokcie", title: "Naturalne wykończenie" },
+  { src: "./assets/nails-review-08.jpeg", type: "Paznokcie", title: "Kolorowe przedłużenie" },
   { src: "./assets/lashes-4d.jpeg", type: "Rzęsy", title: "Uzupełnienie rzęs 4D-5D" },
-  { src: "./assets/tattoo-01.jpeg", type: "Tattoo", title: "Art Soul Tattoo" },
-  { src: "./assets/tattoo-02.jpeg", type: "Tattoo", title: "Tattoo portfolio" },
-  { src: "./assets/tattoo-03.jpeg", type: "Tattoo", title: "Tattoo portfolio" },
-  { src: "./assets/tattoo-04.jpeg", type: "Tattoo", title: "Tattoo portfolio" },
-  { src: "./assets/tattoo-05.jpeg", type: "Tattoo", title: "Tattoo portfolio" },
-  { src: "./assets/tattoo-06.jpeg", type: "Tattoo", title: "Tattoo portfolio" },
-  { src: "./assets/tattoo-07.jpeg", type: "Tattoo", title: "Tattoo portfolio" },
-  { src: "./assets/tattoo-08.jpeg", type: "Tattoo", title: "Tattoo portfolio" }
+  { src: "./assets/tattoo-04.jpeg", type: "Tattoo", title: "Minimalistyczny detal" }
 ];
 
 const serviceCategories = [
